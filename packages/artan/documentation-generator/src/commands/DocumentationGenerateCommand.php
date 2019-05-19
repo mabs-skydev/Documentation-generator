@@ -42,7 +42,7 @@ class DocumentationGenerateCommand extends Command
 
         $this->documentation_pages_path = resource_path('views/artan/documentation/pages');
         $this->documentation_sidebar_path = resource_path('views/artan/documentation/partials/_sidebar.blade.php');
-        $this->folder_path  =   Config::get('documentation.folder_name');
+        $this->folder_path  =   Config::get('documentation-generator.folder_name');
     }
 
     /**

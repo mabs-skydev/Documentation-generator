@@ -1,4 +1,6 @@
 <?php
 
-    Route::get('/docs', 'DocumentationController@index')->name('documentation_home');
-    Route::get('/docs/{page}', 'DocumentationController@page')->name('documentation_page');
+    Route::get('/docs', 'Artan\Documentationgenerator\Controllers\DocumentationController@index')
+        ->name('documentation_home');
+    Route::get('/docs/{page}', 'Artan\Documentationgenerator\Controllers\DocumentationController@page')
+        ->name('documentation_page');
