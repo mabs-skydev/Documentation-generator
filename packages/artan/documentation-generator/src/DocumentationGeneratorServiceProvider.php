@@ -5,7 +5,6 @@ namespace Artan\DocumentationGenerator;
 use Illuminate\Support\ServiceProvider;
 
 use Artan\DocumentationGenerator\Commands\DocumentationGenerateCommand;
-use Artan\DocumentationGenerator\Controllers\DocumentationController;
 
 class DocumentationGeneratorServiceProvider extends ServiceProvider
 {
@@ -33,6 +32,9 @@ class DocumentationGeneratorServiceProvider extends ServiceProvider
             ]);
         }
         
+        // Register controller
+        $this->app->make('Artan\DocumentationGenerator\Controllers\DocumentationController');
+
         // Routes
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
