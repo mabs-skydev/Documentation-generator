@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Artan\DocumentationGenerator\DocumentationGeneratorServiceProvider::class,
 
         /*
          * Application Service Providers...
